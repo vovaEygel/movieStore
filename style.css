@@ -1,0 +1,115 @@
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.movieCard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gridView {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+
+
+/* helpers */
+
+.flex {
+    display: flex;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.justify-start {
+    justify-content: flex-start;
+}
+
+.flex.justify-end {
+    justify-content: flex-end;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.align-baseline {
+    align-items: baseline;
+}
+
+.flex.align-start {
+    align-items: flex-start;
+}
+
+.flex.align-end {
+    align-items: flex-end;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.space-around {
+    justify-content: space-around;
+}
+
+.flex.wrap {
+    flex-wrap: wrap
+}
+
+.flex.grow-1 {
+    flex-grow: 1;
+}
+
+.flex.grow-2 {
+    flex-grow: 2;
+}
+
+.flex.grow-3 {
+    flex-grow: 3;
+}
+
+.clean-list {
+    list-style: none;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
