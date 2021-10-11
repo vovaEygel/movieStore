@@ -27,6 +27,19 @@ a {
     text-decoration: none;
 }
 
+select {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+}
+
 button {
     background: transparent;
     border: 1px solid #2a2a2a;
@@ -70,6 +83,10 @@ button {
     margin: 0 auto;
 }
 
+.imageWrap {
+    text-align: center;
+}
+
 .moviePage h2 {
     text-align: center;
 }
@@ -78,6 +95,18 @@ button {
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
+}
+
+@media(max-width:680px) {
+    .gridView {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+@media(max-width:480px) {
+    .gridView {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
 }
 
 
