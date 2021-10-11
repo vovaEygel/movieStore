@@ -1,6 +1,7 @@
 body {
-    background-color: grey;
+    background-color: #a8a8a8;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -12,9 +13,35 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-size: 68px;
+    text-align: center;
+}
+
+body>h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 a {
     color: #fff;
     text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 44px;
+    text-align: center;
 }
 
 .movieCard {
@@ -35,7 +62,22 @@ a {
 .gridView {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.moviePage {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.moviePage h2 {
+    text-align: center;
+}
+
+.moviePage img {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
